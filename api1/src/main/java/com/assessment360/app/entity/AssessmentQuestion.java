@@ -21,6 +21,7 @@ public class AssessmentQuestion {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="asses_question_id")
 	private Long assesQuestionId;
 	
 	@ManyToOne(fetch = FetchType.EAGER)
